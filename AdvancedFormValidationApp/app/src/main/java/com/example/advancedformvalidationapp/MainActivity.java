@@ -43,29 +43,29 @@ public class MainActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(firstNameInput)) {
                     firstName.setError("Podaj imię");
                     return;
-                }
+                } else if
 
-                if (TextUtils.isEmpty(lastNameInput)) {
+                (TextUtils.isEmpty(lastNameInput)) {
                     lastName.setError("Podaj nazwisko");
                     return;
-                }
+                } else if
 
-                if (TextUtils.isEmpty(emailInput) || !android.util.Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
+                (TextUtils.isEmpty(emailInput) || !android.util.Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
                     email.setError("Podaj poprawny adres e-mail");
                     return;
-                }
+                } else if
 
-                if (TextUtils.isEmpty(phoneInput) || phoneInput.length() < 9) {
+                (TextUtils.isEmpty(phoneInput) || phoneInput.length() < 9) {
                     phone.setError("Podaj poprawny numer telefonu");
                     return;
-                }
+                } else if
 
-                if (TextUtils.isEmpty(passwordInput) || passwordInput.length() < 6) {
+                (TextUtils.isEmpty(passwordInput) || passwordInput.length() < 6) {
                     password.setError("Hasło musi zawierać co najmniej 6 znaków");
                     return;
-                }
+                } else if
 
-                if (!passwordInput.equals(confirmPasswordInput)) {
+                (!passwordInput.equals(confirmPasswordInput)) {
                     confirmPassword.setError("Hasła się nie zgadzają");
                     return;
                 }
